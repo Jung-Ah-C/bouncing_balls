@@ -3,7 +3,8 @@
 
 
 아래 내용은 추후 업데이트 예정
-## 완성본 
+## 완성본 (현재는 자바스크립트로만 구현, 타입스크립트로 마이그레이션 할 예정)
+https://jung-ah-c.github.io/bouncing_balls/index.html
 
 ## 구현 방법
 
