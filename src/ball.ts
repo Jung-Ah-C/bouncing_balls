@@ -1,4 +1,12 @@
 class Ball {
+  radius: number;
+  x: number;
+  y: number;
+  dx: number;
+  dy: number;
+  mass: number;
+  color: string;
+
   constructor(x, y, radius) {
     this.radius = radius;
     this.x = x;

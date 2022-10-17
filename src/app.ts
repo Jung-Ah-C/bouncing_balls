@@ -1,5 +1,5 @@
-let canvas = document.getElementById("myCanvas");
-let ctx = canvas.getContext("2d");
+let canvas: any = document.getElementById("myCanvas");
+let ctx: any = canvas.getContext("2d");
 
 let ballsArray = [];
 
@@ -12,7 +12,7 @@ let dt = 0;
 let ballsNum = Math.floor(Math.random() * (20 - 10 + 1) + 10);
 
 // 공들의 객체를 생성
-for (i = 0; i < ballsNum; i++) {
+for (let i = 0; i < ballsNum; i++) {
   ballsArray[ballsArray.length] = new Ball(
     randomX(),
     randomY(),
