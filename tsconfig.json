@@ -4,7 +4,8 @@
     "target": "ES6",
     "outDir": "./dist",
     "moduleResolution": "Node",
-    "lib": ["ES2015", "DOM", "DOM.Iterable"]
+    "lib": ["ES2015", "DOM", "DOM.Iterable"],
+    "module": "ES2015"
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "dist"]

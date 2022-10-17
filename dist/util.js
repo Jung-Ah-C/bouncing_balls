@@ -1,3 +1,4 @@
+let canvas = document.getElementById("myCanvas");
 function randomX() {
     let x = Math.floor(Math.random() * canvas.width);
     if (x < 30) {
@@ -20,7 +21,6 @@ function randomY() {
 }
 function randomRadius() {
     let r = Math.floor(Math.random() * (parseInt("20px", 10) - parseInt("10px", 10) + 1)) + parseInt("10px", 10);
-    //let r = 5;
     return r;
 }
 function randomDx() {
@@ -39,3 +39,4 @@ function distanceNextFrame(a, b) {
 function distance(a, b) {
     return Math.sqrt(Math.pow((a.x - b.x), 2) + Math.pow((a.y - b.y), 2));
 }
+export { randomX, randomY, randomDx, randomDy, randomRadius, distanceNextFrame, distance, };

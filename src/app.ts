@@ -1,3 +1,6 @@
+import { Ball } from "./ball.js";
+import { randomX, randomY, randomRadius, distance } from "./util.js";
+
 let canvas: any = document.getElementById("myCanvas");
 let ctx: any = canvas.getContext("2d");
 

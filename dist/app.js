@@ -1,3 +1,5 @@
+import { Ball } from "./ball.js";
+import { randomX, randomY, randomRadius, distance } from "./util.js";
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
 let ballsArray = [];

@@ -1,3 +1,4 @@
+import { randomDx, randomDy } from "./util.js";
 class Ball {
     constructor(x, y, radius) {
         this.radius = radius;
@@ -7,12 +8,14 @@ class Ball {
         this.dy = randomDy();
         this.mass = this.radius * this.radius * this.radius;
         this.color = "#000000";
+        let canvas = document.getElementById("myCanvas");
+        this.ctx = canvas.getContext("2d");
     }
     draw() {
-        ctx.beginPath();
-        ctx.arc(Math.round(this.x), Math.round(this.y), this.radius, 0, 2 * Math.PI);
-        ctx.fillStyle = this.color;
-        ctx.fill();
+        this.ctx.beginPath();
+        this.ctx.arc(Math.round(this.x), Math.round(this.y), this.radius, 0, 2 * Math.PI);
+        this.ctx.fillStyle = this.color;
+        this.ctx.fill();
     }
     speed() {
         // 해당 물체의 순간 속도
@@ -23,3 +26,4 @@ class Ball {
         return Math.atan2(this.dy, this.dx);
     }
 }
+export { Ball };
