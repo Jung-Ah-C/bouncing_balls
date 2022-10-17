@@ -1,0 +1,23 @@
+{
+  "name": "bouncing_balls_with_javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jung-Ah-C/bouncing_balls_with_javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jung-Ah-C/bouncing_balls_with_javascript/issues"
+  },
+  "homepage": "https://github.com/Jung-Ah-C/bouncing_balls_with_javascript#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
